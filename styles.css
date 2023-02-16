@@ -36,3 +36,7 @@ p, .subtext {
 .square {
     border: 1px solid gray;
 }
+
+.color {
+    background-color: black;
+}
