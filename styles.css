@@ -1,5 +1,10 @@
+:root {
+    --columns-rows: 16;
+}
+
 body {
     text-align: center;
+    background-color: cornsilk;
 }
 
 h1 {
@@ -13,12 +18,19 @@ p {
     margin: 5px;
 }
 
-.subtext {
-    font-size: 18px;
-    margin-bottom: 20px;
+button {
+    font-size: 17px;
+    display: inline-flex;
+    justify-content: center;
+    margin: 12px;
+    border: 2px solid black;
 }
 
-p, .subtext {
+button:hover {
+    background-color: rgb(160, 158, 158);
+}
+
+p, button {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
@@ -29,14 +41,12 @@ p, .subtext {
     height: 550px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(var(--columns-rows), 1fr);
+    grid-template-rows: repeat(var(--columns-rows), 1fr);
+    border-radius: 5px;
 }
 
 .square {
-    border: 1px solid gray;
-}
-
-.color {
-    background-color: black;
+    border: 1px solid rgb(205, 201, 201);
+    background-color: white;
 }
