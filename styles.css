@@ -2,15 +2,37 @@ body {
     text-align: center;
 }
 
+h1 {
+    font-family: Tourney, 'Courier New', monospace;
+    font-size: 50px;
+    margin: 10px;
+}
+
+p {
+    font-size: 22px;
+    margin: 5px;
+}
+
+.subtext {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+p, .subtext {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
 .grid {
     border: 5px solid black;
-    width: 600px;
-    height: 600px;
-    margin: auto auto;
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
 }
 
 .square {
-    border: 1px solid black;
+    border: 1px solid gray;
 }
