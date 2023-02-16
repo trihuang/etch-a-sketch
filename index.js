@@ -1,5 +1,6 @@
 const grid = document.querySelector('.grid');
 const gridSize = document.getElementById('grid-size');
+const resetButton = document.getElementById('reset');
 let squares = document.querySelectorAll('.square');
 
 // Initialize a 16 x 16 grid
@@ -52,6 +53,12 @@ function updateGrid(num) {
 function colorSquare(e) {
     e.target.style.backgroundColor = 'black';
 }
+
+function reset(e) {
+    updateGrid(16);
+}
+
+resetButton.addEventListener('click', reset);
 
 initializeGrid();
 
